@@ -4,7 +4,7 @@
 
 int adj[MAX][MAX], h[MAX], visited[MAX], n, goal;
 
-int findBest(int open) {
+int findBest(int open[]) {
     int min = INF, node = -1;
     for (int i = 0; i < n; i++)
         if (open[i] && !visited[i] && h[i] < min)
