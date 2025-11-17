@@ -34,6 +34,12 @@ void push(int x) {
         stack[++top] = x;
 }
 
+int pop() {
+    if (isEmpty())
+        return -1;
+    else
+        return stack[top--];
+}
 
 
 
