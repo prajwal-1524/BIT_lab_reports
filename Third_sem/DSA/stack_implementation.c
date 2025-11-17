@@ -41,6 +41,12 @@ int pop() {
         return stack[top--];
 }
 
+int peek() {
+    if (isEmpty())
+        return -1;
+    else
+        return stack[top];
+}
 
 
 // ---------- Main ----------
