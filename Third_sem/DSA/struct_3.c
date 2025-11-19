@@ -16,7 +16,15 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
-
+// In-order traversal function
+void inOrder(struct Node* root) {
+    if (root != NULL) {
+        inOrder(root->left);   // Traverse left subtree
+        printf("%d ", root->data);  // Visit root
+        inOrder(root->right);  // Traverse right subtree
+    }
+}
+git a
 int main() {
     // Create the root and other nodes
     struct Node* root = createNode(1);
