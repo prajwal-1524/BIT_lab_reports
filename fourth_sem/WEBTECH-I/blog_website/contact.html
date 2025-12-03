@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Prajwal Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Prajwal Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <section class="contactme">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Name <span class="req">*</span></label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+                <button type="submit">Send</button>
+                <span class="msg" id="formMsg"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2025 Prajwal Blog</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
