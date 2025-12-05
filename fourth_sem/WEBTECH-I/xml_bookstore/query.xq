@@ -1,0 +1,1 @@
+/bookstore/book[price > 50]g
